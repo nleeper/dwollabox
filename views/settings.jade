@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  form.settingsForm(role='form', action='/settings', method='POST')
+    h3.text-muted.top general
+    div.form-group
+      label(for='firstName') First name
+      input#firstName.form-control(value='#{user.first}')
+    div.form-group
+      label(for='lastName') Last name
+      input#lastName.form-control(value='#{user.last}')
+    h3.text-muted.rdio rdio
+      if user.rdio
+        span.settingsHeader connected
+      else
+        span.settingsHeader connect your rdio account to play your favorite music
+    div.form-group
+      img(height='50px', width='50px', src='#{user.rdio.avatar}')
+      div.details
+        span.name.text-muted #{user.rdio.firstName} #{user.rdio.lastName}
+        br
+        span.url
+          a(href='http://www.rdio.com#{user.rdio.url}', target='_blank') http://www.rdio.com#{user.rdio.url}
+        div.clear
+      div.clear
+    h3.text-muted.dwolla dwolla
+      if user.dwolla
+        span.settingsHeader connected
+      else
+        span.settingsHeader connect your dwolla account to pay to mix things up
+    div.form-group
+      if user.dwolla
+        img(height='50px', width='50px', src='#{user.dwolla.avatar}')
+        div.details
+          span.name.text-muted #{user.dwolla.name}
+            span.subName (#{user.dwolla.id})
+          br
+          span.name.text-muted.balance 
+            a(href='/dwolla/balance') $#{user.dwolla.balance}&nbsp;
+          div.clear
+        div.clear
+      else
+        img(height='50px', width='50px', src='/images/dwolla-app-icon.png')
+        div.details
+          span.url 
+            a.dwollaOauth(href='/oauth/dwolla') Click to connect your Dwolla account
+          div.clear
+        div.clear
+        

@@ -1,0 +1,17 @@
+{
+    "PORT": 5006,
+    "APP_SECRET": "",
+    "RDIO": {
+        "NAME": "Dwollabox",
+        "CONSUMER_KEY": "",
+        "CONSUMER_SECRET": ""
+    },
+    "DWOLLA": {
+        "CONSUMER_KEY": "",
+        "CONSUMER_SECRET": "",
+        "SCOPE": "accountinfofull|contacts|transactions|balance|send|request|funding"
+    },
+    "FIREBASE": {
+        "URL": ""
+    }
+}

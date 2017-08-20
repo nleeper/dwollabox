@@ -1,0 +1,174 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+.container {
+  max-width: 868px;
+  min-width: 568px;
+}
+/*@media (min-width: 768px) {
+  .container {
+    max-width: 868px;
+  }
+}*/
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+div.user {
+  float: right;
+  margin: 10px 0;
+  padding: 0;
+}
+
+span.name {
+  margin-right: 10px;
+}
+
+div.clear {
+  clear: both;
+}
+.settingsForm {
+  text-align: left;
+}
+
+.settingsForm h3 {
+  margin-top: 40px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #CCC;
+}
+
+.settingsForm h3.top {
+  margin-top: 0;
+}
+
+.settingsForm img {
+  float: left;
+}
+
+span.settingsHeader {
+  font-size: 13px;
+  margin-left: 10px;
+  color: #BBB;
+}
+
+.settingsForm .details {
+  float: left;
+  margin-left: 10px;
+}
+
+.details span.name {
+  font-size: 18px;
+}
+
+span.subName {
+  font-size: 13px;
+  margin-left: 8px;
+  color: #BBB;
+}
+
+.details span.url {
+  font-size: 13px;
+}
+
+.rdio {
+  color: #007dc3;
+}
+.dwolla {
+  color: #ff7404;
+}
+.balance a, .balance a:hover {
+  color: #169e59;
+  text-decoration: none;
+}
+
+#rdioDetails, #queue {
+  float: left;
+  text-align: left;
+}
+
+#rdioDetails {
+  width: 60%;
+}
+
+#queue {
+  width: 40%;
+  border-left: 1px solid #CCC;
+  padding-left: 15px;;
+}
+
+#queue h3, #rdioDetails h3 {
+  
+}
+
+span#rdioName {
+  margin-left: 5px;
+}
+
+h2.invalid {
+  color: red;
+}
